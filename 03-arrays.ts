@@ -49,12 +49,30 @@ const gameBoard: GameBoard = [
     ['x', '', '0'], 
 ]
 
+//..............................................................................
+
 // //otro ejemplo de tupla, con el hook useState de React
 
 // type State = [string, (newName: string) => void]
 // const [hero, setHero]: State = useState('thor')
 
+//............................................................................
+
 //otro ejemplo ejemplo de tupla
 
 type RGB = [number, number, number]
 const rgb: RGB = [3, 5, 8]
+
+//Un problema con las tuplas es que son mutables. 
+
+const black: RGB = [0, 0, 0]
+
+black.push(4) // esto modificaría la tupla a 4 cuando le dijimos que queríamos 3. 
+
+//Si queremos las tuplas fijas y poder solucionar esto podemos aplicar un readonly.
+
+type teamRecord = readonly [number, number, number]
+
+const belgrano: teamRecord = [15, 7, 3]
+
+// belgrano.push(4) //esto ya no aplica

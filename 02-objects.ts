@@ -10,6 +10,8 @@
 
 // const thor = createHero('thor', 1500)
 
+//.......................................................................
+
 //Type Alias
 // type Hero = {
 //     name: string
@@ -45,6 +47,8 @@
 
 // const thor = createHero({name: 'thor', age: 1500})
 
+//........................................................................
+
 // //Optional properties
 
 // type HeroId = `${string}-${string}-${string}-${string}-${string}`
@@ -74,12 +78,16 @@
 // const thor = createHero({name: 'thor', age: 1500})
 // console.log(thor.isActive) 
 
+//.....................................................................................................................................
+
 //template union type
 
 type HexadecimalColor = `#${string}`
 
 // const color: HexadecimalColor = '0033ff' // hexadecimales... este va a dar error
 const color2: HexadecimalColor = '#0033ff' // hexadecimales
+
+//.....................................................................................
 
 // //Union Types
 
@@ -111,6 +119,8 @@ const color2: HexadecimalColor = '#0033ff' // hexadecimales
 
 // const thor = createHero({name: 'thor', age: 1500})
 // thor.powerScale = 'galacty'
+
+//..................................................................................................
 
 // // Intersection Types
 
@@ -148,6 +158,8 @@ const color2: HexadecimalColor = '#0033ff' // hexadecimales
 // const thor = createHero({name: 'thor', age: 1500})
 // thor.powerScale = 'galacty'
 
+//..................................................................................................................
+
 // Type Indexing
 
 type HeroProperties = {
@@ -163,7 +175,9 @@ const adressHero: HeroProperties['adress'] = {
     city: 'Córdoba'
 }
 
-// //Typer from value
+//...................................................
+
+// //Type from value
 
 // const address = {
 //     planet: 'Earth',
@@ -176,6 +190,8 @@ const adressHero: HeroProperties['adress'] = {
 //     planet: 'Mars',
 //     city: 'Twitch'
 // }
+
+//................................................
 
 // Type from function return
 
