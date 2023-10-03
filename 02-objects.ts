@@ -1,4 +1,4 @@
-// // objetos
+// // ❗❗❗objetos
 // let hero = {
 //     name: 'thor',
 //     age: 1500
@@ -12,7 +12,7 @@
 
 //.......................................................................
 
-//Type Alias
+//❗❗❗Type Alias
 // type Hero = {
 //     name: string
 //     age: number
@@ -49,7 +49,7 @@
 
 //........................................................................
 
-// //Optional properties
+// //❗❗❗Optional properties
 
 // type HeroId = `${string}-${string}-${string}-${string}-${string}`
 
@@ -80,7 +80,7 @@
 
 //.....................................................................................................................................
 
-//template union type
+//❗❗❗template union type
 
 type HexadecimalColor = `#${string}`
 
@@ -89,7 +89,7 @@ const color2: HexadecimalColor = '#0033ff' // hexadecimales
 
 //.....................................................................................
 
-// //Union Types
+// //❗❗❗Union Types
 
 // type HeroId = `${string}-${string}-${string}-${string}-${string}`
 // type HeroPowerScale = 'local' | 'planetaty' | 'galacty' | 'universal' | 'multiversal' 
@@ -122,7 +122,7 @@ const color2: HexadecimalColor = '#0033ff' // hexadecimales
 
 //..................................................................................................
 
-// // Intersection Types
+// // ❗❗❗Intersection Types
 
 // type HeroId = `${string}-${string}-${string}-${string}-${string}`
 // type HeroPowerScale = 'local' | 'planetaty' | 'galacty' | 'universal' | 'multiversal' 
@@ -160,7 +160,7 @@ const color2: HexadecimalColor = '#0033ff' // hexadecimales
 
 //..................................................................................................................
 
-// Type Indexing
+// ❗❗❗Type Indexing
 
 type HeroProperties = {
     isActive: boolean
@@ -177,7 +177,7 @@ const adressHero: HeroProperties['adress'] = {
 
 //...................................................
 
-// //Type from value
+// //❗❗❗Type from value
 
 // const address = {
 //     planet: 'Earth',
@@ -193,7 +193,7 @@ const adressHero: HeroProperties['adress'] = {
 
 //................................................
 
-// Type from function return
+//❗❗❗ Type from function return
 
 function createAddress() {
     return {

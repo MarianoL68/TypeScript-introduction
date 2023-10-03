@@ -1,4 +1,4 @@
-//Inferencia
+//❗❗❗ Inferencia
 // a y b infieren que son number sin decirles que lo son
 const a = 1;
 const b = 2;
@@ -16,7 +16,7 @@ cadenaDeTexto.toLocaleLowerCase()
 
 //..............................................................
 
-//any
+//❗any
 let obj: any = { x: 0};
 
 obj.foo();
@@ -27,7 +27,7 @@ const n: number = obj;
 
 //..............................................................
 
-// //functions
+// //❗❗❗functions
 // function saludar(name: string) {
 //     console.log(`Hola ${name}`)
 // }
@@ -37,15 +37,15 @@ const n: number = obj;
 
 //...............................................................
 
-// //TIPAR
-// //1era forma:
+// //❗❗❗TIPAR
+// //🟣1era forma:
 // function saludar({name, age} :{name: string, age: number}) {
 //     console.log(`Hola ${name}, tienes ${age} años`)
 // }
 
 // saludar({name: 'Pedro', age: 5})
 
-// //2da forma
+// //🟣2da forma
 // function saludar(persona: {name: string, age: number}) {
 //     const { name, age } = persona
 //      console.log(`Hola ${name}, tienes ${age} años`)
@@ -55,7 +55,7 @@ const n: number = obj;
 
 //......................................................................
 
-//tipar lo que devuelven las funciones
+//❗❗❗tipar lo que devuelven las funciones
 //si pusiera : string, me saldría error porque age es un number y se espera un string
 function saludar({name, age} :{name: string, age: number}) : number { 
     console.log(`Hola ${name}, tienes ${age} años`)
@@ -64,7 +64,7 @@ function saludar({name, age} :{name: string, age: number}) : number {
 
 //..............................................................................................
 
-//tipar funciones parametros
+//❗❗❗tipar funciones parametros
 
 //void no representa ningun tipo, en este caso quiero decir que no espero que la función retorne algo.
 const sayHiFromFunction = (fn: (name: string) => void) => {
@@ -79,28 +79,28 @@ sayHiFromFunction(sayHi)
 
 //.................................................................................................
 
-//tipar arrow functions
+//❗❗❗tipar arrow functions
 
-//1era forma
+//🟣1era forma
 const sumar = (a: number, b: number) : number => {
     return a - b
 }
 
-//2da forma
+//🟣2da forma
 const restar: (a: number, b: number) => number = (a, b) => {
     return a-b
 }
 
 //...................................................................................................
 
-//never, nunca va a devolver nada
+//🚫never, nunca va a devolver nada
 function throwError(message: string): never {
     throw new Error(message)
 }
 
 //..................................................
 
-//inferencia funciones anonimas según el contexto
+//❗❗❗inferencia funciones anonimas según el contexto
 const avengers = ['Thor', 'Dr.Strange', 'Vision']
 
 avengers.forEach(avenger => {

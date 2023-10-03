@@ -1,6 +1,6 @@
 // const languagues: string[] = []
 
-// //otra forma de declarar
+// //❗otra forma de declarar
 // const languages: Array<string> = []
 
 //..................................................
@@ -25,7 +25,7 @@ const heros: HeroBasicInfo[] = []
 
 //.................................................................
 
-//Matríces y Tuplas
+//❗❗❗Matríces y Tuplas
 
 /*
   [
@@ -36,7 +36,7 @@ const heros: HeroBasicInfo[] = []
 */
 
 type CellValue = 'x' | '0' | ''
-//esto es una tubla, es un array que tiene un limite de longitud fijado
+//❗esto es una tupla, es un array que tiene un limite de longitud fijado
 type GameBoard = [
     [CellValue, CellValue, CellValue],
     [CellValue, CellValue, CellValue],
@@ -51,25 +51,25 @@ const gameBoard: GameBoard = [
 
 //..............................................................................
 
-// //otro ejemplo de tupla, con el hook useState de React
+// //❗❗otro ejemplo de tupla, con el hook useState de React
 
 // type State = [string, (newName: string) => void]
 // const [hero, setHero]: State = useState('thor')
 
 //............................................................................
 
-//otro ejemplo ejemplo de tupla
+//❗❗otro ejemplo ejemplo de tupla
 
 type RGB = [number, number, number]
 const rgb: RGB = [3, 5, 8]
 
-//Un problema con las tuplas es que son mutables. 
+//❗❗❗Un problema con las tuplas es que son mutables. 
 
 const black: RGB = [0, 0, 0]
 
 black.push(4) // esto modificaría la tupla a 4 cuando le dijimos que queríamos 3. 
 
-//Si queremos las tuplas fijas y poder solucionar esto podemos aplicar un readonly.
+//❗❗❗Si queremos las tuplas fijas y poder solucionar esto podemos aplicar un readonly.
 
 type teamRecord = readonly [number, number, number]
 

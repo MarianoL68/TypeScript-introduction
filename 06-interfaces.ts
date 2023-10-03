@@ -16,7 +16,7 @@ const hero: Heroe = {
  //.........................................................
 
 
- //las interfaces también pueden estar anidadas
+ //❗❗❗las interfaces también pueden estar anidadas
 interface Producto {
     id: number
     nombre: string
@@ -24,7 +24,7 @@ interface Producto {
     quantity: number
 }
 
-//las interfaces se pueden extender
+//❗❗las interfaces se pueden extender
 interface Zapatilla extends Producto {
     talle: number
 }
@@ -34,7 +34,7 @@ interface CarritoDeCompras {
     productos: Zapatilla[]
 }
 
-//indicar funciones
+//❗❗❗indicar funciones
 interface CarritoOps {
     add: (product: Producto) => void,
     remove: (id: number) => void,
